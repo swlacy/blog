@@ -3,7 +3,7 @@
 cd ~/projects/blog
 
 if [ $# -gt 0 ]; then
-    msg="'$*'"
+    msg="$*"
 else
     read -p "Message: " msg
 fi
