@@ -6,5 +6,5 @@ You may use the source code here however you like. The applies for the source co
 Build it yourself:
 ```bash
 $ git clone https://github.com/lacysw/blog.git && cd blog
-$ git clone https://github.com/lacysw/hugo-port-theme.git themes
+$ git clone https://github.com/lacysw/hugo-port-theme.git themes\
 ```
