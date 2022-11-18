@@ -3,6 +3,14 @@ languageCode = "en-us"
 title = "Sid's Blog"
 
 theme = "hugo-port-theme"
+enableGitInfo = true
 
 [params]
     author = "Sid Lacy"
+    license = "MIT"
+    licenseLink = "https://opensource.org/licenses/MIT"
+    attributionPage = "/attribution"
+    repoLink = "https://lacysw/blog"
+    showLastBuilt = true
+    showCommitHash = true
+
