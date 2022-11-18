@@ -1,6 +1,5 @@
 # Port theme (https://github.com/lacysw/hugo-port-theme)
 themes/hugo-port-theme/
 
-# Build files
+# Temporary build files
 .hugo_build.lock
-deploy.sh
