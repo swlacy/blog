@@ -5,12 +5,19 @@ title = "Sid's Blog"
 theme = "hugo-port-theme"
 enableGitInfo = true
 
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
+
 [params]
     author = "Sid Lacy"
-    license = "MIT"
+    license = "MIT License"
     licenseLink = "https://opensource.org/licenses/MIT"
     attributionPage = "/attribution"
-    repoLink = "https://lacysw/blog"
+    authorPage = "/about"
+    repoLink = "https://github.com/lacysw/blog"
+    logoPath = "/logo.png"
     showLastBuilt = true
     showCommitHash = true
+
 

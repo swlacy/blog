@@ -18,4 +18,4 @@ cd tailwindcss && ./tailwindcss -i main.css -o ../static/css/style.css
 
 cd ../../..
 rm -rf public 
-hugo && git add . && git commit -m "$msg" && git push # && firebase deploy
+hugo --minify --gc && git add . && git commit -m "$msg" && git push # && firebase deploy
