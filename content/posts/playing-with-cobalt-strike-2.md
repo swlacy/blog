@@ -7,7 +7,7 @@ tags: [tools, 'cobalt strike', 'red team']
 description: "Bypassing Defender on Windows Server 2022 with Cobalt Strike v4.5 and C++"
 summary: "Bypassing Defender on Windows Server 2022 with Cobalt Strike v4.5 and C++"
 cover:
-    image: "/media/playing-with-cobalt-strike-2-cover.jpg"
+    path: "/media/playing-with-cobalt-strike-2-cover.jpg"
     alt: "@driaug, (Unsplash, 2019)"
     caption: "@driaug, (Unsplash, 2019)"
 date: 2022-04-13

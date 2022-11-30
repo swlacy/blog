@@ -9,7 +9,7 @@ ShowPostNavLinks: false
 summary: Comprehensive walkthrough of the Paper machine on HackTheBox
 date: 2022-02-13
 cover:
-    image: "/media/paper-cover.png"
+    path: "/media/paper-cover.png"
 ShowToc: true
 TocOpen: false
 ---

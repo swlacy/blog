@@ -52,12 +52,8 @@ pygmentsOptions = "linenos=inline"
 
 [markup]
   [markup.highlight]
-    style = 'lovelace'
     tabWidth = 4
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-  page = ["HTML"]
+    noClasses = false
 
 [frontmatter]
     date = ["date", "publishDate", "lastmod"]

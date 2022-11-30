@@ -9,7 +9,7 @@ ShowPostNavLinks: false
 summary: Walkthroughs for the HackTheBox Hardware Challenge section — work in progress
 date: 2022-02-08
 cover:
-    image: "/documents/htbhardwarechallenges.png"
+    path: "/documents/htbhardwarechallenges.png"
 ShowToc: true
 TocOpen: false
 draft: true

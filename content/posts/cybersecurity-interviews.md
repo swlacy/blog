@@ -1,18 +1,22 @@
 ---
-slug: cybersecurity-interviews
-title: Cybersecurity Interviews
-authors: [sid]
-keywords: ['sid', 'lacy', 'blog', 'website', 'cybersecurity', 'security', 'computer', 'interview', 'questions', 'tech', 'networking']
-tags: [career]
-description: Common cybersecurity interview questions and answers, plus some tips
-summary: Common cybersecurity interview questions and answers, plus some tips
-date: 2022-03-16
-showtoc: true
-cover:
-    image: "/media/cybersecurity-interviews-cover.jpg"
-    alt: "@homajob, (Unsplash, 2016)"
-    caption: "@driaug, Unsplash"
 draft: false
+
+author: Sid Lacy
+title: Cybersecurity Interviews
+description: "Common cybersecurity interview questions and answers"
+tags: ['career']
+date: 2022-03-16
+lastmod: 2022-03-18
+
+cover:
+    path: "/media/cybersecurity-interviews-cover.jpg"
+    alt: "Two people brainstorming over paper"
+    caption: "@homajob (Unsplash, 2016)"
+hide:
+    meta: false
+    contents: false
+    footnote: false
+    sidebar: false
 ---
 
 > **job in·ter·view** [ /ˈjäb ˈin-tər-ˌvyü/ ]  *noun*: a performance art piece in which you, the *interviewee*, are invited to humiliate yourself for the pleasure and delight of the *interviewer(s)*, those in attendance.

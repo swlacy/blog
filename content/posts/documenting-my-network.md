@@ -7,7 +7,7 @@ tags: [networking, projects, homelab]
 description: Running inventory for interviews
 Summary: Running inventory for interviews
 cover:
-    image: "/media/netdiag.png"
+    path: "/media/netdiag.png"
     alt: "My home network"
     caption: "My home network"
 date: 2022-01-03

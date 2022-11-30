@@ -1,18 +1,22 @@
 ---
-slug: discord-beta
+draft: true
+
+author: Sid Lacy
 title: DiscordSetup.zip
-authors: [sid]
-keywords: ['sid', 'lacy', 'blog', 'website', 'cybersecurity', 'security', 'computer', 'discord', 'malware', 'tech', 'network']
-tags: [discord, 'phishing', 'scam']
-description: 'The phishers are improving: a brief analysis of a rudimentary "Discord Beta" scam'
-summary: 'The phishers are improving: a brief analysis of a rudimentary "Discord Beta" scam'
+description: 'The phishers are improving: a brief analysis of a rudimentary Discord Beta scam'
+tags: ['threats']
+date: 2022-05-23
+lastmod: 2022-05-23
+
 cover:
-    image: "/media/discord-beta-cover.jpg"
+    path: "/media/discord-beta-cover.jpg"
     alt: "@jjying, (Unsplash, 2020)"
     caption: "@jjying, (Unsplash, 2020)"
-date: 2022-05-23
-showtoc: true
-draft: true
+hide:
+    meta: false
+    contents: false
+    footnote: false
+    sidebar: false
 ---
 > Discord Beta just came out! It's invite-only; I got personally selected by Discord staff! Are you using it yet?!
 

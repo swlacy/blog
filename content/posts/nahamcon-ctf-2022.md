@@ -5,7 +5,7 @@ summary: Dweeno, Unimod, Cereal, Mobilize, Jurrasic Park, and EXtravagant
 keywords: ['sid', 'lacy', 'blog', 'website', 'cybersecurity', 'security', 'computer', 'ctf', 'nahamcon']
 date: 2022-05-01
 cover:
-    image: "/media/nahamcon-ctf-2022-cover.png"
+    path: "/media/nahamcon-ctf-2022-cover.png"
 ---
 
 Last week, I had the pleasure of participating in the 2022 NahamCon CTF, created and supported by the hard work of [@NahamSec](https://twitter.com/NahamSec), [@/_JohnHammond](https://twitter.com/_JohnHammond), and so many others — it was a blast. I competed on behalf of Western Washington University, and I am especially pleased with our performance; as shown in the cover photo, we scored in the top one percent of all teams.
