@@ -15,9 +15,10 @@ theme = "hugo-port-theme"
     logoPath = "/logo.png"
     showLastBuilt = true
     showCommitHash = true
+    showCommand = true
     email = "contact@swlacy.com"
     tagline = "I ramble about security and technology."
-    footnote = "Hey there! Thanks for taking the time to read this post. Notice something in need of improvement? Please, do not hesitate to let me know via email or a git PR. Kind regards."
+    footnote = "Hey there! Thanks for taking the time to read this post. I hope it was interesting and informative. Notice something in need of improvement? Please, do not hesitate to let me know via email or git pull request. Kind regards, Sid."
 
 [menu]
   [[menu.socials]]
@@ -53,6 +54,10 @@ pygmentsOptions = "linenos=inline"
   [markup.highlight]
     style = 'lovelace'
     tabWidth = 4
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
 
 [frontmatter]
     date = ["date", "publishDate", "lastmod"]
