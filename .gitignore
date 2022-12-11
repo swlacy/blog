@@ -1,5 +1,8 @@
-# Mintek theme (https://github.com/lacysw/hugo-mintek-theme)
-themes/
+# Built project
+public/
 
 # Temporary build files
 .hugo_build.lock
+
+# Mintek theme (https://github.com/lacysw/hugo-mintek-theme)
+themes/
