@@ -1,4 +1,3 @@
-# blog
 Source code of my blog, *Sid's Blog*, hosted at [swlacy.com](https://swlacy.com). Built using Hugo, Bootstrap, and my custom theme, [Mintek](https://github.com/lacysw/hugo-mintek-theme).
 
 Usage (requires Hugo binary in path):
