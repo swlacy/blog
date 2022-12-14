@@ -5,8 +5,6 @@ theme: hugo-mintek-theme
 
 params:
   author: Sid Lacy
-  headshot: /headshot.png
-  profileBgPath: /profileBg.jpg
   license: MIT License
   licenseLink: 'https://opensource.org/licenses/MIT'
   attributionPage: /attribution
@@ -18,9 +16,13 @@ params:
   showCommitHash: true
   showCommand: true
   email: contact@swlacy.com
-  tagline: Hi there!
-  subTagline: My name is Sid Lacy
-  subSubTagline: I ramble about security and technology
+  headshot: /headshot.webp
+  indexBg: /indexBg.webp
+  indexTitle: Greetings!
+  indexSubTitle: >-
+    My name is Sid Lacy – I ramble about security and technology. This is my personal website, which
+    I use to publish technical articles of all kinds related to my cybersecurity learning journey.
+    Take a look!
   footnote: >-
     Hey there! Thanks for taking the time to read this post. I hope it was
     interesting and informative. Notice something in need of improvement?
@@ -29,42 +31,18 @@ params:
 
 menu:
   header:
-    - name: Homepage
-      pre: home
-      url: /
+    - name: Posts
+      pre: folder-open
+      url: /posts
       weight: 1
-    - name: Post Archive
-      pre: archive
-      url: posts
-      weight: 2
     - name: About Me
       pre: user
       url: /about
-      weight: 3
-    - name: My Resume
-      pre: paperclip
-      url: /resume
-      weight: 4
-    - name: Source Code
-      pre: git-branch
-      url: 'https://github.com/lacysw/blog'
-      weight: 5
-    - name: My Email
-      pre: mail
+      weight: 2
+    - name: Contact
+      pre: heart-handshake
       url: 'mailto:contact@swlacy.com?subject=Hello!'
-      weight: 6
-    - name: My Twitter
-      pre: twitter
-      url: 'https://twitter.com/actuallysid'
-      weight: 7
-    - name: My LinkedIn
-      pre: linkedin
-      url: 'https://linkedin/in/lacysw'
-      weight: 8
-    - name: My GitHub
-      pre: github
-      url: 'https://github.com/lacysw'
-      weight: 9
+      weight: 3
   socials:
     - name: Email
       pre: mail
@@ -82,13 +60,16 @@ menu:
       pre: github
       url: 'https://github.com/lacysw'
       weight: 4
-      enableGitInfo: true
-      pygmentsOptions: linenos=inline
+
+enableGitInfo: true
+pygmentsOptions: linenos=inline
 
 markup:
   highlight:
     tabWidth: 4
     noClasses: false
+    style: solarized-dark256
+
 
 frontmatter:
   date:
