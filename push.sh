@@ -12,7 +12,7 @@ if [ -z "$msg" ]; then
     msg="No commit message provided"
 fi
 
-cd themes/hugo-mintek-theme
+cd themes/hugo-port-theme
 git add . && git commit -m "[PARENT BUILD] $msg" && git push
 
 cd ../..
