@@ -1,13 +1,14 @@
 baseURL: 'https://swlacy.com'
 languageCode: en-us
 title: Sid's Blog
-theme: hugo-mintek-theme
+theme: hugo-port-theme
 
 params:
-  author: Sid Lacy
-  license: MIT License
+  authorName: Sid Lacy
+  licenseName: MIT License
   licenseLink: 'https://opensource.org/licenses/MIT'
   attributionPage: /attribution
+  timezone: PST
   authorPage: /about
   resumeLink: /resume
   repoLink: 'https://github.com/lacysw/blog'
@@ -22,27 +23,35 @@ params:
   indexSubTitle: >-
     My name is Sid Lacy – I ramble about security and technology. This is my personal website, which
     I use to publish technical articles of all kinds related to my cybersecurity learning journey.
-    Take a look!
+    Take a look! Want to get in touch? Don't hesistate to contact me via email or LinkedIn.
   footnote: >-
-    Hey there! Thanks for taking the time to read this post. I hope it was
+    **Hey there!** Thanks for taking the time to read this post. I hope it was
     interesting and informative. Notice something in need of improvement?
-    Please, do not hesitate to let me know via email or git pull request. Kind
-    regards, Sid.
+    Please, do not hesitate to let me know [via email](mailto:contact@swlacy.com?subject=Hello!)
+    or [git pull request](https://github.com/lacysw/blog).
 
-menu:
+menus:
   header:
-    - name: Posts
-      pre: folder-open
-      url: /posts
+    - name: Articles
+      pre: newspaper
+      url: /articles
       weight: 1
-    - name: About Me
-      pre: user
+    - name: About
+      pre: contact
       url: /about
       weight: 2
     - name: Contact
       pre: heart-handshake
       url: 'mailto:contact@swlacy.com?subject=Hello!'
       weight: 3
+    - name: Resume
+      pre: paperclip
+      url: /resume
+      weight: 4
+    - name: Source
+      pre: code-2
+      url: 'https://github.com/lacysw/blog'
+      weight: 5
   socials:
     - name: Email
       pre: mail
@@ -60,6 +69,23 @@ menu:
       pre: github
       url: 'https://github.com/lacysw'
       weight: 4
+    - name: Resume
+      pre: paperclip
+      url: '/resume'
+      weight: 5
+  indexCards:
+    - name: Posts
+      pre: folder
+      url: '/resume'
+      weight: 1
+    - name: About Me
+      pre: user
+      url: '/about'
+      weight: 2
+    - name: Resume
+      pre: paperclip
+      url: '/resume'
+      weight: 3
 
 enableGitInfo: true
 pygmentsOptions: linenos=inline

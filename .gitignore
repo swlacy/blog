@@ -4,5 +4,5 @@ public/
 # Temporary build files
 .hugo_build.lock
 
-# Mintek theme (https://github.com/lacysw/hugo-mintek-theme)
+# Port theme (https://github.com/lacysw/hugo-port-theme)
 themes/

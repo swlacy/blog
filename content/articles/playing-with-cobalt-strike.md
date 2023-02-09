@@ -1,17 +1,24 @@
 ---
-slug: playing-with-cobalt-strike
-title: "Playing With Cobalt Strike"
-authors: [sid]
-keywords: ['sid', 'lacy', 'blog', 'website', 'cybersecurity', 'security', 'computer', 'honeypot', 'malware', 'tech', 'network']
+draft: false
+
+author: Sid Lacy
+title: 'Playing With Cobalt Strike'
+description: 'Fun with Cobalt Strike v4.5'
 tags: [tools, 'cobalt strike', 'red team']
-description: "Fun with Cobalt Strike v4.5"
-summary: "Fun with Cobalt Strike v4.5"
-cover:
-    path: "/media/playing-with-cobalt-strike-cover.jpg"
-    alt: "'Late Night Working', @josef_photography, (Unsplash, 2018)"
-    caption: "'Late Night Working', @josef_photography, Unsplash"
 date: 2022-02-11
-showtoc: true
+lastmod:
+
+cover:
+    path: '/media/playing-with-cobalt-strike-cover.jpg'
+    alt: 'Cover image'
+    caption: '@josef_photography, (Unsplash, 2018)'
+
+show:
+    meta: true
+    contents: true
+    footnote: true
+    sidebar: true
+
 ---
 
 Ah, [*Cobalt Strike*](https://www.cobaltstrike.com/), HelpSystems' infamous (but legitimate) Red Teaming product coopted by attackers worldwide for malicious purposes. For those unfamiliar, Cobalt Strike is an adversarial toolkit. Its official capacity in the security industry is to simulate attacks for testing purposes. Of course, as is perhaps expected, given the prompt release of each new version to the Internet, those with less noble intentions also make use of the software.

@@ -2,8 +2,8 @@
 draft: false
 
 author:  Sid Lacy
-title: "About"
-description: "About Sid Lacy, the creator of this site"
+title: "About Me"
+description: "About Sid Lacy (me), the creator of this site"
 tags: []
 date: 2021-12-28
 lastmod: 2022-11-30
@@ -20,7 +20,7 @@ hide:
     sidebar: true
 ---
 
-Hello! My name is Sid Lacy (phonetic: /sɪd ˈleɪsi/). I am a student and security engineer.
+**Hello!** My name is Sid Lacy (phonetic: `/sɪd ˈleɪsi/`). I am a student and security engineer.
 
 > Student?
 

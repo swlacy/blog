@@ -1,5 +1,8 @@
 #/usr/bin/env bash
-hugo server \
+cd "${0%/*}"
+
+screen -dmS "hugo" bash -c " \
+    hugo server \
     --bind=0.0.0.0 \
     --noHTTPCache \
     --gc \
@@ -9,4 +12,9 @@ hugo server \
     --buildFuture \
     --printPathWarnings \
     --printUnusedTemplates \
-    --verbose
+    --verbose \
+"
+
+screen -dmS "tail" bash -c " \
+    themes/hugo-port-theme/tailwind/tailwind.sh
+"
