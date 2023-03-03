@@ -86,16 +86,34 @@ menus:
       pre: paperclip
       url: '/resume'
       weight: 3
-
-enableGitInfo: true
-pygmentsOptions: linenos=inline
+  footerPages:
+    - name: Articles
+      pre: newspaper
+      url: /articles
+      weight: 1
+    - name: About
+      pre: contact
+      url: /about
+      weight: 2
+    - name: Contact
+      pre: heart-handshake
+      url: 'mailto:contact@swlacy.com?subject=Hello!'
+      weight: 3
+    - name: Resume
+      pre: paperclip
+      url: /resume
+      weight: 4
+    - name: Source
+      pre: code-2
+      url: 'https://github.com/lacysw/blog'
+      weight: 5
 
 markup:
   highlight:
     tabWidth: 4
     noClasses: false
-    style: solarized-dark256
 
+pygmentsOptions: linenos=inline
 
 frontmatter:
   date:
@@ -107,3 +125,5 @@ frontmatter:
     - ':git'
     - date
     - publishDate
+
+enableGitInfo: true

@@ -3,6 +3,7 @@ cd "${0%/*}"
 
 screen -dmS "hugo" bash -c " \
     hugo server \
+    --baseUrl=dev-main.home.local:1313 \
     --bind=0.0.0.0 \
     --noHTTPCache \
     --gc \

@@ -4,7 +4,7 @@ draft: true
 author: <no value>
 title: 'Tester'
 description: 'One sentence'
-tags: []
+tags: ['test', 'cobalt', 'tag']
 date: 2023-01-02T19:52:10-08:00
 lastmod: 2023-01-03T19:52:10-08:00
 
