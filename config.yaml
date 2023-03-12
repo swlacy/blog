@@ -32,9 +32,9 @@ params:
 
 menus:
   header:
-    - name: Articles
+    - name: Posts
       pre: newspaper
-      url: /articles
+      url: /#recent-posts
       weight: 1
     - name: About
       pre: contact

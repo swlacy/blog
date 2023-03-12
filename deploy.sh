@@ -17,4 +17,5 @@ git add . && git commit -m "[PARENT BUILD] $msg" && git push
 
 cd ../..
 rm -rf public
-hugo --minify --gc && git add . && git commit -m "$msg" && git push # && firebase deploy
+hugo --minify --gc && git add . && git commit -m "$msg" && git push
+firebase deploy

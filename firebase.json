@@ -1,0 +1,42 @@
+{
+    "hosting": {
+        "public": "public",
+
+        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+
+        "rewrites": [
+            {
+                "source": "/netdiag",
+                "destination": "/media/netdiag.png"
+            },
+            {
+                "source": "/resume",
+                "destination": "/media/resume.pdf"
+            }
+        ],
+
+        "headers": [
+            {
+                "source": "**",
+                "headers": [
+                    { "key": "Access-Control-Allow-Origin", "value": "null" },
+                    { "key": "X-Frame-Options", "value": "deny" },
+                    { "key": "X-Content-Type-Options", "value": "nosniff" },
+                    { "key": "X-XSS-Protection", "value": "1; mode=block" },
+                    { "key": "Referrer-Policy", "value": "no-referrer" },
+                    { "key": "Permissions-Policy", "value": "interest-cohort=()" },
+                    { "key": "Content-Security-Policy", "value": "upgrade-insecure-requests; block-all-mixed-content" },
+                    { "key": "Expect-CT", "value": "enforce, max-age=30" },
+                    { "key": "Cross-Origin-Embedder-Policy", "value": "*" },
+                    { "key": "Cross-Origin-Opener-Policy", "value": "*" },
+                    { "key": "Cross-Origin-Resource-Policy", "value": "*" },
+                    { "key": "Server", "value": "StopLookingAtMyHeaders Server v1" }
+                ]
+            }
+        ],
+
+        "cleanUrls": true,
+
+        "trailingSlash": false
+    }
+}
