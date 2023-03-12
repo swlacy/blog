@@ -1,17 +1,22 @@
 ---
-title: "HackTheBox — Paper"
-description: Comprehensive walkthrough of the Paper machine on HackTheBox
-keywords: ['sid', 'lacy', 'blog', 'website', 'cybersecurity', 'security', 'computer', 'hackthebox', 'htb', 'tech', 'paper']
-hide_table_of_contents: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: false
-summary: Comprehensive walkthrough of the Paper machine on HackTheBox
-date: 2022-02-13
+draft: false
+
+author: 'Sid Lacy'
+title: 'HackTheBox — Paper'
+description: Comprehensive walkthrough of the Paper machine on HackTheBox'
+tags: ['ctf']
+date: '2022-02-13'
+lastmod: '2022-02-13'
+
 cover:
-    path: "/media/paper-cover.png"
-ShowToc: true
-TocOpen: false
+    path: '/media/paper-cover.png'
+    alt: 'HackTheBox Paper completion'
+    caption: 'HackTheBox Paper completion'
+
+show:
+    meta: true
+    contents: true
+    footnote: true
 ---
 
 Hello! Thank you for visiting my write-up on [*Paper*](https://app.hackthebox.com/machines/Paper), a HackTheBox CTF published by user [secnigma](https://app.hackthebox.com/users/92926).

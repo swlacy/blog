@@ -1,12 +1,12 @@
 ---
 draft: false
 
-author: Sid Lacy
+author: 'Sid Lacy'
 title: 'Playing With Cobalt Strike: Part Two'
 description: 'Bypassing Defender on Windows Server 2022 with Cobalt Strike v4.5 and C++'
-tags: ['cobalt-strike', 'windows']
-date: 2022-04-13
-lastmod: 2022-04-13
+tags: ['red-team']
+date: '2022-04-13'
+lastmod: '2022-04-13'
 
 cover:
     path: '/media/playing-with-cobalt-strike-2-cover.jpg'
@@ -17,8 +17,6 @@ show:
     meta: true
     contents: true
     footnote: true
-    sidebar: true
-
 ---
 
 Approximately two months ago, I published [*Playing With Cobalt Strike*](/posts/playing-with-cobalt-strike), which [readers seemed to enjoy](https://twitter.com/actuallysid/status/1492598213630513152). While writing that article, I was both pleasantly surprised as a red teamer, and disheartened as a blue teamer, at the ease of use and the general efficacy of Cobalt Strike 4.5's Beacons (payloads) against Windows 10 and Excel 2016.

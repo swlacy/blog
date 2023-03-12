@@ -13,6 +13,25 @@ cover:
 ShowToc: true
 TocOpen: false
 draft: true
+
+draft: false
+
+author: 'Sid Lacy'
+title: 'Documenting My Network'
+description: 'Running inventory for interviews'
+tags: ['homelab']
+date: '2022-01-03'
+lastmod: '2022-01-03'
+
+cover:
+    path: '/media/netdiag.png'
+    alt: 'My home network'
+    caption: 'My home network'
+
+show:
+    meta: true
+    contents: true
+    footnote: true
 ---
 
 Hello! This page documents my (ongoing) solutions to the [HackTheBox *Hardware* challenges](https://app.hackthebox.com/challenges/). I have done my best to explain the processes I used to resolve the challenge solutions, one step at a time. By doing so, I hope I can more effectively share my learning.

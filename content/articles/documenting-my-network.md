@@ -1,16 +1,22 @@
 ---
-slug: documenting-my-network
-title: Documenting My Network
-authors: [sid]
-keywords: ['sid', 'lacy', 'blog', 'website', 'cybersecurity', 'security', 'computer', 'hackthebox', 'htb', 'tech', 'network', 'diagram']
-tags: [networking, projects, homelab]
-description: Running inventory for interviews
-Summary: Running inventory for interviews
+draft: false
+
+author: 'Sid Lacy'
+title: 'Documenting My Network'
+description: 'Running inventory for interviews'
+tags: ['homelab']
+date: '2022-01-03'
+lastmod: '2022-01-03'
+
 cover:
-    path: "/media/netdiag.png"
-    alt: "My home network"
-    caption: "My home network"
-date: 2022-01-03
+    path: '/media/netdiag.png'
+    alt: 'My home network'
+    caption: 'My home network'
+
+show:
+    meta: true
+    contents: true
+    footnote: true
 ---
 
 I recently interviewed virtually for a remote junior sysadmin role at a local company. Ultimately, I was not extended an offer of employment; however, I feel I learned a lot from the interview process, especially considering the rather unconventional nature of the questions I was asked. I'll expand on this point in the future, as much of the discussion to be had there is outside the scope of this post.

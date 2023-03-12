@@ -1,4 +1,6 @@
 ---
+draft: true
+
 slug: macos-cybersecurity-student
 title: Running macOS as a Cybersecurity Student
 authors: [sid]

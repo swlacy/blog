@@ -1,17 +1,22 @@
 ---
-title: "HackTheBox — Previse"
-description: Comprehensive walkthrough of the retired Previse machine on HackTheBox
-keywords: ['sid', 'lacy', 'blog', 'website', 'cybersecurity', 'security', 'computer', 'hackthebox', 'htb', 'tech', 'previse']
-hide_table_of_contents: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: false
-summary: Comprehensive walkthrough of the retired Previse machine on HackTheBox
-date: 2021-12-23
+draft: false
+
+author: 'Sid Lacy'
+title: 'HackTheBox — Previse'
+description: 'Comprehensive walkthrough of the retired Previse machine on HackTheBox'
+tags: ['ctf']
+date: '2022-02-11'
+lastmod: '2022-02-11'
+
 cover:
-    path: "/media/previseCard.png"
-ShowToc: true
-TocOpen: false
+    path: '/media/previseCard.png'
+    alt: 'HackTheBox Previse completion'
+    caption: 'HackTheBox Previse completion'
+
+show:
+    meta: true
+    contents: true
+    footnote: true
 ---
 
 Hello, and thank you for expressing interest in my report on [Previse](https://app.hackthebox.com/machines/Previse), a CTF hosted by Hack the Box. Previse was uploaded by HTB user [m4lwhere](https://app.hackthebox.com/users/107145) 138 days prior to the publication of this report and is currently considered by the HTB community to be easy to intermediate in terms of difficulty.

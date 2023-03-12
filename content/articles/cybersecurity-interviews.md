@@ -1,7 +1,7 @@
 ---
 draft: false
 
-author: Sid Lacy
+author: 'Sid Lacy'
 title: 'Cybersecurity Interviews'
 description: 'Common junior-level cybersecurity interview questions and answers'
 tags: ['career']

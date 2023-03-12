@@ -1,12 +1,12 @@
 ---
 draft: false
 
-author: Sid Lacy
+author: 'Sid Lacy'
 title: 'Assorted Writeups From NahamCon CTF 2022'
 description: 'Dweeno, Unimod, Cereal, Mobilize, Jurrasic Park, EXtravagant'
 tags: ['ctf']
-date: 2022-05-01
-lastmod: 2022-12-17
+date: '2022-05-01'
+lastmod: '2022-12-17'
 
 cover:
     path: '/media/nahamcon-ctf-2022-cover.png'
@@ -17,7 +17,6 @@ show:
     meta: true
     contents: true
     footnote: true
-    sidebar: true
 ---
 
 Last week, I had the pleasure of participating in the 2022 NahamCon CTF, created and supported by the hard work of [@NahamSec](https://twitter.com/NahamSec), [@/_JohnHammond](https://twitter.com/_JohnHammond), and so many others — it was a blast. I competed on behalf of Western Washington University, and I am especially pleased with our performance; as shown in the cover photo, we scored in the top one percent of all teams.
