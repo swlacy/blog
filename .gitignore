@@ -1,7 +1,8 @@
-# Built project
+# Built project for deployment
 public/
 
 # Temporary build files
+.firebase/
 .hugo_build.lock
 
 # Port theme (https://github.com/lacysw/hugo-port-theme)
