@@ -11,7 +11,7 @@
             },
             {
                 "source": "/resume",
-                "destination": "/media/SidLacyResume.pdf"
+                "destination": "/SidLacyResume.pdf"
             }
         ],
 
