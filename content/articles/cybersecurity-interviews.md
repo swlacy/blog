@@ -9,7 +9,7 @@ date: '2022-03-16'
 lastmod: '2022-03-16'
 
 cover:
-    path: '/media/cybersecurity-interviews-cover.jpg'
+    path: '/media/cybersecurity-interviews-cover.webp'
     alt: 'Two people brainstorming over paper'
     caption: '@homajob (Unsplash, 2016)'
 

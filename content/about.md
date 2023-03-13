@@ -9,7 +9,7 @@ date: 2021-12-28
 lastmod: 2022-11-30
 
 cover:
-    path: "/media/craterLake.jpg"
+    path: "/media/craterLake.webp"
     alt: "Photo of Crater Lake"
     caption: "Crater Lake (Me, 2021)"
 

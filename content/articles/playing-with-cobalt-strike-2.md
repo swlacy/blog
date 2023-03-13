@@ -9,7 +9,7 @@ date: '2022-04-13'
 lastmod: '2022-04-13'
 
 cover:
-    path: '/media/playing-with-cobalt-strike-2-cover.jpg'
+    path: '/media/playing-with-cobalt-strike-2-cover.webp'
     alt: '@driaug, (Unsplash, 2019)'
     caption: '@driaug, (Unsplash, 2019)'
 
@@ -52,7 +52,7 @@ Since I will be running an, erm, *illegitimate* version of Cobalt Strike on my n
 
 Luckily, enforcing a strict network security policy is trivial in Proxmox, the hypervisor I use in my home lab. See the firewall rules for the attacker below, which simply drops all outbound traffic not directed at `WinSrv22`. For clarity, I have explicitly included the implicit deny rule.
 
-![Screenshot of Proxmox firewall rules](/media/playing-with-cobalt-strike-2-1.png)
+![Screenshot of Proxmox firewall rules](/media/playing-with-cobalt-strike-2-1.webp)
 
 ### Configuring the Victim
 
@@ -77,21 +77,21 @@ From here on, I will refer to the attacker as `attacker.local` and the victim as
 
 Constructing creative methods to spread malware is certainly an interesting topic in its own right, but is somewhat out of the scope of this article. Thus, I will intentionally download samples from `attacker.local` using Python's `http.server` module.
 
-![Screenshot of attacker.local serving files](/media/playing-with-cobalt-strike-2-2.png)
+![Screenshot of attacker.local serving files](/media/playing-with-cobalt-strike-2-2.webp)
 
-![Screenshot of victim.local viewing served files](/media/playing-with-cobalt-strike-2-3.png)
+![Screenshot of victim.local viewing served files](/media/playing-with-cobalt-strike-2-3.webp)
 
 **\*** **\*** **\***
 
 Okay, with all of that out of the way, it's time to proceed with the interesting section.
 
-![Screenshot of the Cobalt Strike "About" page](/media/playing-with-cobalt-strike-2-4.png)
+![Screenshot of the Cobalt Strike "About" page](/media/playing-with-cobalt-strike-2-4.webp)
 
 ## Setting Up a Listener
 
 So that malicious samples may be generated, a [*listener*](https://www.cobaltstrike.com/blog/listeners-cobalt-strikes-glue-feature) must first be established. To that end, I have created an HTTP listener that calls back to port 8080. However, many options exist, including HTTPS, SMB, and plain TCP.
 
-![Screenshot of setting up a Cobalt Strike HTTP Listener](/media/playing-with-cobalt-strike-2-5.png)
+![Screenshot of setting up a Cobalt Strike HTTP Listener](/media/playing-with-cobalt-strike-2-5.webp)
 
 ### Explanation of Fields
 
@@ -112,7 +112,7 @@ This is a big deal because, while Windows Defender hasn't always been the best, 
 
 Luckily, [@joevest](https://twitter.com/joevest) and [@Pernat1y](https://twitter.com/Pernat1y) have published [this excellent C2 profile generator](https://github.com/threatexpress/random_c2_profile), so I was able to painlessly craft a profile for my own use. An excerpt of the script is below; note how the configuration emulates a legitimate webserver.
 
-![Excerpt of malleable C2 script](/media/playing-with-cobalt-strike-2-6.png)
+![Excerpt of malleable C2 script](/media/playing-with-cobalt-strike-2-6.webp)
 
 With the malleable C2 profile selected, the listener can be created, allowing for payload generation.
 
@@ -120,23 +120,23 @@ With the malleable C2 profile selected, the listener can be created, allowing fo
 
 By navigating to *Attacks > Packages > Windows Executable*, Cobalt Strike reveals the ability to craft a malicious EXE that will call back to `attacker.local` when executed on `victim.local`.
 
-![Generating a malicious Windows executable](/media/playing-with-cobalt-strike-2-7.png)
+![Generating a malicious Windows executable](/media/playing-with-cobalt-strike-2-7.webp)
 
 With that file saved and hosted on the `attacker.local` Python webserver, transferring to `victim.local` is easy.
 
-![Showing Windows Defender](/media/playing-with-cobalt-strike-2-8.png)
+![Showing Windows Defender](/media/playing-with-cobalt-strike-2-8.webp)
 
 ### Security Alerts
 
 #### SmartScreen
 
-![SmartScreen blocking the payload](/media/playing-with-cobalt-strike-2-9.png)
+![SmartScreen blocking the payload](/media/playing-with-cobalt-strike-2-9.webp)
 
 Immediately upon downloading the file, Windows/Edge pushed an alert that SmartScreen blocked the file. However, this is due to the fact that this file has a signature and /or hash that does not match frequently downloaded files. This is not an issue with Cobalt Strike and could be solved by bundling it as a trojan with something else, such as Google Chrome.
 
 #### Windows Defender
 
-![Windows Defender blocking the payload](/media/playing-with-cobalt-strike-2-10.png)
+![Windows Defender blocking the payload](/media/playing-with-cobalt-strike-2-10.webp)
 
 Here's a more serious issue, for me as an attacker, at least. In reality, I am, of course, happy to see that Microsoft has not only identified the sample as a virus but done so correctly (`Backdoor:Win64/CobaltStrike.NP!dha`). I tried several more configurations, including stageless delivery and a PowerShell script, none of which were able to get past Windows Defender. However, that is expected behavior given default configurations.
 
@@ -152,7 +152,7 @@ unsigned char buf[] = "\xfc\x48\x83\xe4\xf0\xe8\xc8\x00\x00\x00\x41\x51\x41\x50\
 
 Here's the string above, decoded:
 
-![Plaintext shellcode](/media/playing-with-cobalt-strike-2-11.png)
+![Plaintext shellcode](/media/playing-with-cobalt-strike-2-11.webp)
 
 #### Testing Plain Shellcode
 
@@ -214,7 +214,7 @@ $
 
 And, as I expected, Windows Defender no longer detected the shellcode, as it isn't shellcode at all anymore, but a garbage string... That is, before it is reconstructed in memory away from the prying eyes of the real-time disk scanning of Windows Defender.
 
-![Plaintext shellcode (rotated)](/media/playing-with-cobalt-strike-2-12.png)
+![Plaintext shellcode (rotated)](/media/playing-with-cobalt-strike-2-12.webp)
 
 Ah, the chief security product from one of the most technologically dominant companies on the planet, defeated by the Ceaser Cipher. That may have been a premature celebration, however.
 
@@ -379,19 +379,19 @@ As shown above, I changed the process by adding the simple step of XORing each b
 
 Running `payload.exe`:
 
-![Running payload.exe](/media/playing-with-cobalt-strike-2-13.png)
+![Running payload.exe](/media/playing-with-cobalt-strike-2-13.webp)
 
-![Connected beacon](/media/playing-with-cobalt-strike-2-14.png)
+![Connected beacon](/media/playing-with-cobalt-strike-2-14.webp)
 
 Success! `payload.exe` yielded a reverse HTTP connection without being stopped by Windows Defender. The VirusTotal scan shown in the screenshot above is [here](https://www.virustotal.com/gui/file/f964f16a0ae9f6b71737e5d16d1945cd1623d2c2980358cd6a77cc038c036114/summary).
 
 One very interesting note is how Windows Defender actually *does* detect the payload in VirusTotal, but not on `victim.local`. As a reminder, `victim.local` is a Windows Server 2022 with fully updated (non-Endpoint) Defender signatures as of the time of writing. Specifically, the security intelligence version on `victim.local` is `1.363.336.0`. That made me curious though: I run Windows 10 on my desktop; will Defender on Windows 10 detect `payload.exe`?
 
-![Defender on Windows 10 detecting payload.exe](/media/playing-with-cobalt-strike-2-15.png)
+![Defender on Windows 10 detecting payload.exe](/media/playing-with-cobalt-strike-2-15.webp)
 
 As it turns out, the answer is yes. Why is that, I wonder? Does the Microsoft security suite target different threats on different platforms? Perhaps that is a topic I will explore in the future. In any case, beacon connectivity was successful, allowing for a variety of different malicious actions, such as grabbing screenshots, killing processes, executing additional payloads, attempting elevation, and more.
 
-![Screenshot of activity on victim.local](/media/playing-with-cobalt-strike-2-16.png)
+![Screenshot of activity on victim.local](/media/playing-with-cobalt-strike-2-16.webp)
 
 ## Wrapping Up
 
@@ -399,9 +399,9 @@ If this showcase was any indication, Cobalt Strike remains a powerful weapon in 
 
 Further, technical attacks like this can be realistically considered the most difficult end of cybercrime. Think, for instance, of the LAPSUS$ group, [the alleged leader of which is a 16-year-old from Oxford, England](https://www.bbc.com/news/technology-60864283). *Screenshots below are from the [$LAPSUS Telegram channel](https://t.me/minsaudebr) taken in March 2022.*
 
-![Screenshot 1 of Lapsus group chat](/media/playing-with-cobalt-strike-2-17.jpg)
+![Screenshot 1 of Lapsus group chat](/media/playing-with-cobalt-strike-2-17.webp)
 
-![Screenshot 2 of Lapsus group chat](/media/playing-with-cobalt-strike-2-18.png)
+![Screenshot 2 of Lapsus group chat](/media/playing-with-cobalt-strike-2-18.webp)
 
 Many times, to perform malicious activities, cybercriminals do not have to engage their targets in technical operations at all. Alternatively, if they do —  such as dropping Cobalt Strike executables for persistence in networks — they might simply be able to purchase network access, as LAPSUS$ is known for.
 

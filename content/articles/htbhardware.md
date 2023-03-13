@@ -9,7 +9,7 @@ date: '2022-02-08'
 lastmod: '2022-02-08'
 
 cover:
-    path: '/media/htbhardwarechallenges.png'
+    path: '/media/htbhardwarechallenges.webp'
     alt: 'HTB Hardware challenges'
     caption: 'HTB Hardware challenges'
 
@@ -59,11 +59,11 @@ $
 
 Unzipping the archive reveals one file, `debugging_interface_signal.sal`. I was unfamiliar with the `.sal` file extension, so I had to perform some research to proceed. Eventually, I was led to [*Logic 2*](https://www.saleae.com/downloads/), a tool developed by Saleae (hence the extension). The tool claims to "effortlessly decode protocols like SPI, I2C, Serial, and many more" — promising, in the context of this challenge. Luckly, Saleae supports Linux; the AppImage of Logic 2 looks like this:
 
-![Screenshot of Logic 2](/media/hardware1-1.png)
+![Screenshot of Logic 2](/media/hardware1-1.webp)
 
 By opening `debugging_interface_signal.sal` as a capture in Logic 2 and selecting the Async Filter view from the right-hand sidebar, Terminal View can be expanded to show activity messages sent. Note that the default Async Filter settings can be used.
 
-![Screenshot of Logic 2](/media/hardware1-2.png)
+![Screenshot of Logic 2](/media/hardware1-2.webp)
 
 The last message has `HTB{}` in the stream, a convention used by HackTheBox machines and challenged to indicate flags; thus, the solution has been found! The full string has been censored to preserve the integrity of the challenge.
 
@@ -73,7 +73,7 @@ The last message has `HTB{}` in the stream, a convention used by HackTheBox mach
 
 https://www.hackthebox.com/achievement/challenge/787255/207
 
-![Proof of completion](/media/hardware1-3.png)
+![Proof of completion](/media/hardware1-3.webp)
 
 ## The Needle
 
@@ -111,11 +111,11 @@ $
 
 Only one file, `firmware.bin`, was contained within the archive — it appearns to be an executable.
 
-![Screenshot of Logic 2](/media/hardware1-1.png)
+![Screenshot of Logic 2](/media/hardware1-1.webp)
 
 By opening `debugging_interface_signal.sal` as a capture in Logic 2 and selecting the Async Filter view from the right-hand sidebar, Terminal View can be expanded to show activity messages sent. Note that the default Async Filter settings can be used.
 
-![Screenshot of Logic 2](/media/hardware1-2.png)
+![Screenshot of Logic 2](/media/hardware1-2.webp)
 
 The last message has `HTB{}` in the stream, a convention used by HackTheBox machines and challenged to indicate flags; thus, the solution has been found! The full string has been censored to preserve the integrity of the challenge.
 
@@ -125,7 +125,7 @@ The last message has `HTB{}` in the stream, a convention used by HackTheBox mach
 
 https://www.hackthebox.com/achievement/challenge/787255/207
 
-![Proof of completion](/media/hardware1-3.png)
+![Proof of completion](/media/hardware1-3.webp)
 
 ## MORE
 

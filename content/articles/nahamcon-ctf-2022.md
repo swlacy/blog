@@ -9,7 +9,7 @@ date: '2022-05-01'
 lastmod: '2022-12-17'
 
 cover:
-    path: '/media/nahamcon-ctf-2022-cover.png'
+    path: '/media/nahamcon-ctf-2022-cover.webp'
     alt: 'NahamCon CTF Scoreboard'
     caption: 'WWU NahamCon Final Score (Sid Lacy, 2022)'
 
@@ -27,7 +27,7 @@ Looking for writeups of other NahamCon CTF 2022 challenges? See [my teammate's b
 
 ## Dweeno (Hardware)
 
-![Screenshot of Dweeno](/media/nahamcon-ctf-2022-dweeno-1.png)
+![Screenshot of Dweeno](/media/nahamcon-ctf-2022-dweeno-1.webp)
 
 *Dweeno*, under the hardware category, dealt with reversing encryption on the challenge flag created by an Arduino Mega. I have never used an Ardunio before — further, the diagram mistakenly listed the wrong microcontroller — so this challenge initially appeared hard to approach.
 
@@ -35,11 +35,11 @@ Looking for writeups of other NahamCon CTF 2022 challenges? See [my teammate's b
 
 #### sketch.pdf
 
-![Screenshot of Dweeno sketch.pdf](/media/nahamcon-ctf-2022-dweeno-2.png)
+![Screenshot of Dweeno sketch.pdf](/media/nahamcon-ctf-2022-dweeno-2.webp)
 
-#### setup.jpg
+#### setup.webp
 
-![Screenshot of Dweeno setup.jpg](/media/nahamcon-ctf-2022-dweeno-3.jpg)
+![Screenshot of Dweeno setup.webp](/media/nahamcon-ctf-2022-dweeno-3.webp)
 
 #### source.ino
 ```c
@@ -149,11 +149,11 @@ void loop() {
 
 Putting `output.txt` through a [binary to ASCII converter](https://www.rapidtables.com/convert/number/binary-to-ascii.html) yielded the following, which looked like a shifted version of the original flag (`flag{...}`).
 
-![Screenshot of Dweeno output converted to ASCII chars](/media/nahamcon-ctf-2022-dweeno-4.png)
+![Screenshot of Dweeno output converted to ASCII chars](/media/nahamcon-ctf-2022-dweeno-4.webp)
 
 To better understand what the Ardunio did, I found [the documentation for the IC on the breadboard](https://pdf1.alldatasheet.com/datasheet-pdf/view/53786/FAIRCHILD/MM74HC86N.html). Clearly, the bits of the characters of the flag were simply `xor`ed depending on their position. Thus, I annotated the `sketch.pdf` like so:
 
-![Screenshot of Dweeno annotated diagram](/media/nahamcon-ctf-2022-dweeno-5.png)
+![Screenshot of Dweeno annotated diagram](/media/nahamcon-ctf-2022-dweeno-5.webp)
 
 ### Developing a Decryptor
 
@@ -194,7 +194,7 @@ dev ~/projects/ctf/dweeno $
 
 ## Unimod (Cryptography)
 
-![Screenshot of Unimod](/media/nahamcon-ctf-2022-unimod-1.png)
+![Screenshot of Unimod](/media/nahamcon-ctf-2022-unimod-1.webp)
 
 *Unimod* (cryptography) was quite simple; all it involved was brute-forcing the reverse of the included cryptographic script.
 
@@ -254,7 +254,7 @@ dev ~/projects/ctf/unimod $
 
 ## Cereal (Hardware)
 
-![Screenshot of Cereal](/media/nahamcon-ctf-2022-cereal-1.png)
+![Screenshot of Cereal](/media/nahamcon-ctf-2022-cereal-1.webp)
 
 Also part of the hardware category, *Cereal* was another simple challenge. This one involved analyzing serial data transmission (hence the pun) for the flag.
 
@@ -268,13 +268,13 @@ Analog data; no preview shown.
 
 I have already performed a similar task on HackTheBox, so I already knew what to do here. Simply opening `mystery.sal` in Logic 2's *Console View* displayed the flag.
 
-![Screenshot of Cereal](/media/nahamcon-ctf-2022-cereal-2.png)
+![Screenshot of Cereal](/media/nahamcon-ctf-2022-cereal-2.webp)
 
 ---
 
 ## Mobilize (Mobile)
 
-![Screenshot of Mobilize](/media/nahamcon-ctf-2022-mobilize-1.png)
+![Screenshot of Mobilize](/media/nahamcon-ctf-2022-mobilize-1.webp)
 
 One of the easiest challenges of the competition in my opinion, *Mobilize* (mobile) had the plaintext string within its APK package.
 
@@ -298,7 +298,7 @@ slak@parrot:~/ctf/mobilize $
 
 ## Jurrasic Park (Web)
 
-![Screenshot of Jurrasic Park](/media/nahamcon-ctf-2022-park-1.png)
+![Screenshot of Jurrasic Park](/media/nahamcon-ctf-2022-park-1.webp)
 
 The easiest web challenge, *Jurrasic Park* had a pointer to the flag on the `robots.txt` page.
 
@@ -306,22 +306,22 @@ The easiest web challenge, *Jurrasic Park* had a pointer to the flag on the `rob
 
 #### robots.txt
 
-![Screenshot of Jurrasic Park](/media/nahamcon-ctf-2022-park-2.png)
+![Screenshot of Jurrasic Park](/media/nahamcon-ctf-2022-park-2.webp)
 
 #### /ingen
 
-![Screenshot of Jurrasic Park](/media/nahamcon-ctf-2022-park-3.png)
+![Screenshot of Jurrasic Park](/media/nahamcon-ctf-2022-park-3.webp)
 
 ### Flag
 
 
-![Screenshot of Jurrasic Park flag](/media/nahamcon-ctf-2022-park-4.png)
+![Screenshot of Jurrasic Park flag](/media/nahamcon-ctf-2022-park-4.webp)
 
 ---
 
 ## EXtravagant (Web)
 
-![Screenshot of EXtravagant](/media/nahamcon-ctf-2022-extravagant-1.png)
+![Screenshot of EXtravagant](/media/nahamcon-ctf-2022-extravagant-1.webp)
 
 *EXtravagant* (web) was vulnerable to [XXE](https://portswigger.net/web-security/xxe)
 
@@ -337,14 +337,14 @@ The easiest web challenge, *Jurrasic Park* had a pointer to the flag on the `rob
 
 #### Uploading
 
-![Screenshot of uploading EXtravagant exploit XML](/media/nahamcon-ctf-2022-extravagant-2.png)
+![Screenshot of uploading EXtravagant exploit XML](/media/nahamcon-ctf-2022-extravagant-2.webp)
 
 #### Viewing
 
-![Screenshot of viewing EXtravagant exploit XML](/media/nahamcon-ctf-2022-extravagant-3.png)
+![Screenshot of viewing EXtravagant exploit XML](/media/nahamcon-ctf-2022-extravagant-3.webp)
 
 ### Flag
 
 Clicking `Submit` revealed the flag on the webpage.
 
-![Screenshot of EXtravagant flag](/media/nahamcon-ctf-2022-extravagant-4.png)
+![Screenshot of EXtravagant flag](/media/nahamcon-ctf-2022-extravagant-4.webp)

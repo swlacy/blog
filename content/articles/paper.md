@@ -9,7 +9,7 @@ date: '2022-02-13'
 lastmod: '2022-02-13'
 
 cover:
-    path: '/media/paper-cover.png'
+    path: '/media/paper-cover.webp'
     alt: 'HackTheBox Paper completion'
     caption: 'HackTheBox Paper completion'
 
@@ -96,7 +96,7 @@ $
 
 It appears that Paper is listening on port 22 for SSH and 80/443 for HTTP/S with an Apache webserver. Further, the Apache headers indicate that the operating system of Paper is CentOS. Navigating to *http://paper.htb* reveals the page below:
 
-![Screenshot of http://paper.htb](/media/paper-1.png)
+![Screenshot of http://paper.htb](/media/paper-1.webp)
 
 Just because the root of the webserver is hosting the CentOS test landing page does not mean that there is no other hosted content, however. To determine whether this is the case, let’s use [Gobuster](https://github.com/OJ/gobuster), a tool designed in part to brute-force web URIs.
 
@@ -119,22 +119,22 @@ Accept-Ranges: bytes
 Content-Length: 643
 Keep-Alive: timeout=5, max=99
 Connection: Keep-Alive
-Content-Type: image/png
+Content-Type: image/webp
 ```
 
 Most of the information here is useless, save for the inclusion of the *X-Backend-Server* header, `office.paper`. Adding `10.10.11.143    office.paper` to my hosts file allowed me to browse to *http://office.paper*, a screenshot of which is shown below:
 
-![Screenshot of http://office.paper](/media/paper-2.png)
+![Screenshot of http://office.paper](/media/paper-2.webp)
 
 A WordPress site — every red teamer's dream come true! Poking around the website revealed a hint in the form of a user comment:
 
 > Michael, you should remove the secret content from your drafts ASAP, as they are not that secure as you think!
 
-![Screenshot of http://office.paper](/media/paper-3.png)
+![Screenshot of http://office.paper](/media/paper-3.webp)
 
 In light of that comment, let's check the availability of drafts on *office.paper*. The website *0day.work* [has a post detailing how to view WordPress drafts without authentication](https://0day.work/proof-of-concept-for-wordpress-5-2-3-viewing-unauthenticated-posts/) using the `static` keyword. Navigating to http://office.paper/?static=1 allowed viewing the page below, which includes a valuable note.
 
-![Screenshot of http://office.paper](/media/paper-4.png)
+![Screenshot of http://office.paper](/media/paper-4.webp)
 
 > \# Secret Registration URL of new Employee chat system
 >
@@ -142,7 +142,7 @@ In light of that comment, let's check the availability of drafts on *office.pape
 
 Adding *chat.office.paper* to my hosts file and following the link above leads to this page:
 
-![Screenshot of http://chat.office.paper/register/8qozr226AhkCHZdyY](/media/paper-5.png)
+![Screenshot of http://chat.office.paper/register/8qozr226AhkCHZdyY](/media/paper-5.webp)
 
 ## Obtaining Entry
 
@@ -150,7 +150,7 @@ Adding *chat.office.paper* to my hosts file and following the link above leads t
 
 Great! We have access to an account creation portal. I generated a new user — `actuallysid@twitter.com` — to log in with. After authenticating, I was added to the `#general` Rocket Chat channel.
 
-![Screenshot of http://chat.office.paper/register/8qozr226AhkCHZdyY](/media/paper-6.png)
+![Screenshot of http://chat.office.paper/register/8qozr226AhkCHZdyY](/media/paper-6.webp)
 
 A few of the messages in `#general` stand out to me:
 
@@ -188,7 +188,7 @@ A few of the messages in `#general` stand out to me:
 
 Evidently, the bot *recyclops* will accept commands passed to it via private message in Rocket Chat. Let's test that functionality. 
 
-![Screenshot of http://chat.office.paper/register/8qozr226AhkCHZdyY](/media/paper-7.png)
+![Screenshot of http://chat.office.paper/register/8qozr226AhkCHZdyY](/media/paper-7.webp)
 
 *Sidenote: I love the attention to detail, and creativity of HTB machine publishers — the bot even responded to the joke command. Thank you for your effort, [secnigma](https://secnigma.wordpress.com/)!*
 
@@ -357,4 +357,4 @@ Paper was a fun and simple CTF, and I extend my thanks towards the author, [secn
 
 https://www.hackthebox.com/achievement/machine/787255/432
 
-![Proof of completion](/media/paper-completion.png)
+![Proof of completion](/media/paper-completion.webp)
