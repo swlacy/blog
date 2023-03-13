@@ -76,8 +76,9 @@ menus:
       weight: 5
   typed:
     - name: 'security engineer.'
-    - name: 'cybersecurity student.'
+    - name: 'infosec student.'
     - name: 'homelab hobbyist.'
+    - name: 'reverse engineer.'
     - name: 'security enthusiast.'
     - name: 'programmer.'
 
