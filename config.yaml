@@ -19,11 +19,12 @@ params:
   email: contact@swlacy.com
   headshot: /headshot.webp
   indexBg: /indexBg.webp
-  indexTitle: Greetings!
+  indexTitle: Greetings! My name is Sid Lacy.
+  indexTypedPrefix: 'I am a '
   indexSubTitle: >-
-    My name is Sid Lacy – I ramble about security and technology. This is my personal website, which
-    I use to publish technical articles of all kinds related to my cybersecurity learning journey.
-    Take a look! Want to get in touch? Don't hesistate to contact me via email or LinkedIn.
+    This is my personal website, which I use to ~~ramble about security and technology~~
+    publish technical articles of all kinds related to my cybersecurity learning journey.
+    Want to get in touch? Don't hesitate to contact me via email, LinkedIn, or Twitter.
   footnote: >-
     **Hey there!** Thanks for taking the time to read this post. I hope it was
     interesting and informative. Notice something in need of improvement?
@@ -73,6 +74,13 @@ menus:
       pre: paperclip
       url: '/resume'
       weight: 5
+  typed:
+    - name: 'security engineer.'
+    - name: 'cybersecurity student.'
+    - name: 'homelab hobbyist.'
+    - name: 'security enthusiast.'
+    - name: 'programmer.'
+
   indexCards:
     - name: Posts
       pre: folder
