@@ -12,7 +12,7 @@ params:
   authorPage: /about
   resumeLink: /resume
   repoLink: 'https://github.com/lacysw/blog'
-  logoPath: /logo.png
+  logoPath: /logo.webp
   showLastBuilt: true
   showCommitHash: true
   showCommand: true
