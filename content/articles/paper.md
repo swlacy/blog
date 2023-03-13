@@ -31,7 +31,7 @@ Paper requires the submission of `USER` and `SYSTEM` flags; I have described the
 
 *Feedback? You can reach me via [email](mailto:contact@swlacy.com?subject=Paper%20Report).*
 
-## Enumeration & Reconnisanse
+## Enumeration & Reconnaissance
 
 ### Preliminary Information
 
