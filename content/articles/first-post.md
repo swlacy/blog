@@ -1,12 +1,22 @@
 ---
-slug: first-post
-title: First Post
-authors: [sid]
-keywords: ['sid', 'lacy', 'blog', 'website', 'cybersecurity', 'security', 'computer', 'hackthebox', 'htb', 'tech']
-tags: [welcome]
-description: First Post
-summary: First Post
-date: 2021-12-27
+draft: false
+
+author: 'Sid Lacy'
+title: 'First Post'
+description: 'First post'
+tags: []
+date: '2021-12-27'
+lastmod: '2021-12-27'
+
+cover:
+    path: ''
+    alt: ''
+    caption: ''
+
+show:
+    meta: true
+    contents: false
+    footnote: false
 ---
 
 Hello, and welcome! You are currently reading my first "official" post here, having now fleshed out all of the necessary features of my new website, *swlacy.com*. This space is designed to fulfill my needs as a platform to publish technical content and reflect on my learning as a cybersecurity and political science student.

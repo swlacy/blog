@@ -1,32 +1,17 @@
 ---
-title: HackTheBox — Hardware Challenges
-description: Walkthroughs for the HackTheBox Hardware Challenge section — work in progress
-keywords: ['sid', 'lacy', 'blog', 'website', 'cybersecurity', 'security', 'computer', 'hackthebox', 'htb', 'hardware']
-hide_table_of_contents: false
-ShowReadingTime: true
-ShowBreadCrumbs: false
-ShowPostNavLinks: false
-summary: Walkthroughs for the HackTheBox Hardware Challenge section — work in progress
-date: 2022-02-08
-cover:
-    path: "/documents/htbhardwarechallenges.png"
-ShowToc: true
-TocOpen: false
-draft: true
-
 draft: false
 
 author: 'Sid Lacy'
-title: 'Documenting My Network'
-description: 'Running inventory for interviews'
-tags: ['homelab']
-date: '2022-01-03'
-lastmod: '2022-01-03'
+title: 'HackTheBox — Hardware Challenges'
+description: 'Walkthroughs for the HackTheBox Hardware Challenge section — work in progress'
+tags: ['ctf']
+date: '2022-02-08'
+lastmod: '2022-02-08'
 
 cover:
-    path: '/media/netdiag.png'
-    alt: 'My home network'
-    caption: 'My home network'
+    path: '/media/htbhardwarechallenges.png'
+    alt: 'HTB Hardware challenges'
+    caption: 'HTB Hardware challenges'
 
 show:
     meta: true

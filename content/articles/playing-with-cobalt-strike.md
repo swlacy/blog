@@ -4,7 +4,7 @@ draft: false
 author: 'Sid Lacy'
 title: 'Playing With Cobalt Strike'
 description: 'Fun with Cobalt Strike v4.5'
-tags: [tools, 'cobalt strike', 'red team']
+tags: ['red-team']
 date: '2022-02-11'
 lastmod: '2022-02-11'
 
