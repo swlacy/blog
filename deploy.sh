@@ -3,6 +3,7 @@
 cd ~/projects/blog
 
 # Optimize images
+# From https://virtubox.github.io/img-optimize/
 if test -f "$HOME/.img-optimize/optimize.sh"; then
     cd static/media && bash $HOME/.img-optimize/optimize.sh --all
     rename s/\.png// *.png.webp && rename s/\.jpg// *.jpg.webp
