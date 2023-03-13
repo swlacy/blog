@@ -3,7 +3,7 @@ draft: false
 
 author: 'Sid Lacy'
 title: 'HackTheBox — Paper'
-description: Comprehensive walkthrough of the Paper machine on HackTheBox'
+description: 'Comprehensive walkthrough of the Paper machine on HackTheBox'
 tags: ['ctf']
 date: '2022-02-13'
 lastmod: '2022-02-13'
