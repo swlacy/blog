@@ -15,7 +15,7 @@ cover:
 
 show:
     meta: false
-    contents: true
+    contents: false
     footnote: false
 ---
 
