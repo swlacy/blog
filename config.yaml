@@ -20,7 +20,7 @@ params:
   headshot: /headshot.webp
   indexBg: /indexBg.webp
   indexTitle: Greetings! My name is Sid Lacy.
-  indexTypedPrefix: 'I am '
+  indexTypedPrefix: 'I am a '
   indexSubTitle: >-
     This is my personal website, which I use to ~~ramble about security and technology~~
     publish technical articles of all kinds related to my cybersecurity learning journey.
@@ -75,11 +75,10 @@ menus:
       url: '/resume'
       weight: 5
   typed:
-    - name: 'a security engineer.'
-    - name: 'an infosec student.'
-    - name: 'a homelab hobbyist.'
-    - name: 'a reverse engineer.'
-    - name: 'a programmer.'
+    - name: 'cybersecurity student.'
+    - name: 'security/devops engineer.'
+    - name: 'homelab hobbyist.'
+    - name: 'programmer and tinkerer.'
 
   indexCards:
     - name: Posts
