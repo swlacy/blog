@@ -75,10 +75,10 @@ menus:
       url: '/resume'
       weight: 5
   typed:
-    - name: 'cybersecurity student.'
-    - name: 'security/devops engineer.'
+    - name: 'cybersec student.'
+    - name: 'security engineer.'
     - name: 'homelab hobbyist.'
-    - name: 'programmer and tinkerer.'
+    - name: 'programmer/tinkerer.'
 
   indexCards:
     - name: Posts
