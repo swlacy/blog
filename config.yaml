@@ -16,6 +16,7 @@ params:
   showLastBuilt: true
   showCommitHash: true
   showCommand: true
+  indexMaxPosts: 5
   email: contact@swlacy.com
   headshot: /headshot.webp
   indexBg: /indexBg.webp
