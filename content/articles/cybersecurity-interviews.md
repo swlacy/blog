@@ -3,10 +3,10 @@ draft: false
 
 author: 'Sid Lacy'
 title: 'Cybersecurity Interviews'
-description: 'Common junior-level cybersecurity interview questions and answers'
+description: 'A random assortment of junior-level cybersecurity interview questions I have been asked'
 tags: ['career']
 date: '2022-03-16'
-lastmod: '2022-03-16'
+lastmod: '2023-03-18'
 
 cover:
     path: '/media/cybersecurity-interviews-cover.webp'
