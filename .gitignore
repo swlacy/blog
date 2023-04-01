@@ -7,3 +7,6 @@ public/
 
 # Port theme (https://github.com/lacysw/hugo-port-theme)
 themes/
+
+# VS Code
+.vscode/
