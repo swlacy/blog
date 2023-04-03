@@ -26,7 +26,6 @@
                     { "key": "Referrer-Policy", "value": "no-referrer" },
                     { "key": "Permissions-Policy", "value": "interest-cohort=()" },
                     { "key": "Content-Security-Policy", "value": "upgrade-insecure-requests; block-all-mixed-content" },
-                    { "key": "Expect-CT", "value": "enforce, max-age=30" },
                     { "key": "Cross-Origin-Embedder-Policy", "value": "*" },
                     { "key": "Cross-Origin-Opener-Policy", "value": "*" },
                     { "key": "Cross-Origin-Resource-Policy", "value": "*" },
