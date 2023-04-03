@@ -42,7 +42,7 @@ menus:
       pre: contact
       url: /about
       weight: 2
-    - name: Contact
+    - name: Email
       pre: heart-handshake
       url: 'mailto:contact@swlacy.com?subject=Hello!'
       weight: 3
@@ -50,7 +50,7 @@ menus:
       pre: paperclip
       url: /resume
       weight: 4
-    - name: Source
+    - name: Src
       pre: code-2
       url: 'https://github.com/lacysw/blog'
       weight: 5
