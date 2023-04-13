@@ -4,6 +4,7 @@ title: Sid's Blog
 theme: hugo-port-theme
 
 params:
+  gtmID: 'GTM-KZ3FM5C'
   authorName: 'Sid Lacy'
   licenseName: 'MIT License'
   licenseLink: 'https://opensource.org/licenses/MIT'
