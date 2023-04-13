@@ -1,20 +1,20 @@
 ---
 draft: false
 
-author:  Sid Lacy
-title: "About Me"
-description: "About the site author"
+author: 'Sid Lacy'
+title: 'About Me'
+description: 'About the site author'
 tags: []
 date: '2021-12-28'
 lastmod: '2023-04-12'
 
 cover:
-    path: "/media/samishBay.webp"
-    alt: "Photo of Samish Bay from Samish Overlook (Me, '23)"
-    caption: "Photo of Samish Bay from Samish Overlook (Me, '23)"
+    path: ''
+    alt: ''
+    caption: ''
 
 show:
-    meta: false
+    meta: true
     contents: false
     footnote: false
 ---
