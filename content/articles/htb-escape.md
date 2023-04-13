@@ -9,7 +9,7 @@ date: '2023-03-14'
 lastmod: '2023-03-14T'
 
 cover:
-    path: '/media/'
+    path: ''
     alt: ''
     caption: 'Name (Publisher, YYYY)'
 
