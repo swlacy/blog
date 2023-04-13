@@ -4,115 +4,114 @@ title: Sid's Blog
 theme: hugo-port-theme
 
 params:
-  authorName: Sid Lacy
-  licenseName: MIT License
+  authorName: 'Sid Lacy'
+  licenseName: 'MIT License'
   licenseLink: 'https://opensource.org/licenses/MIT'
-  attributionPage: /attribution
-  timezone: PST
-  authorPage: /about
-  resumeLink: /resume
+  attributionPage: '/attribution'
+  timezone: 'PST'
+  authorPage: '/about'
+  resumeLink: '/resume'
   repoLink: 'https://github.com/lacysw/blog'
-  logoPath: /logo.webp
+  logoPath: '/logo.webp'
   showLastBuilt: true
   showCommitHash: true
   showCommand: true
   indexMaxPosts: 5
-  email: contact@swlacy.com
-  headshot: /headshot.webp
-  indexBg: /indexBg.webp
-  indexTitle: Greetings! My name is Sid Lacy.
-  indexTypedPrefix: 'I am a '
+  email: 'contact@swlacy.com'
+  headshot: '/headshot.webp'
+  indexBg: '/indexBg.webp'
+  indexTitle: "Hey, I'm Sid."
+  indexTypedPrefix: "I'm a "
   indexSubTitle: >-
-    This is my personal website, which I use to ~~ramble about security and technology~~
-    publish technical articles of all kinds related to my cybersecurity learning.
+    This is my personal website, which I use to ~~ramble about security topics~~
+    publish technical stuff related to my cybersecurity learning.
     Feel free to reach out 👋.
   footnote: >-
-    **Hey there!** Thanks for taking the time to read this post. I hope it was
-    interesting and informative. Notice something in need of improvement?
-    Please, do not hesitate to let me know [via email](mailto:contact@swlacy.com?subject=Hello!)
-    or [git pull request](https://github.com/lacysw/blog).
+    **Hey there!** Thanks for reading my post. I hope it was interesting and
+    informative. Notice something in need of improvement? Please let me know
+    [via email](mailto:contact@swlacy.com?subject=Hello!) or
+    [git pull request](https://github.com/lacysw/blog).
 
 menus:
   header:
-    - name: Posts
-      pre: newspaper
-      url: /#recent-posts
+    - name: 'Posts'
+      pre: 'newspaper'
+      url: '/#recent-posts'
       weight: 1
-    - name: About
-      pre: contact
-      url: /about
+    - name: 'About'
+      pre: 'contact'
+      url: '/about'
       weight: 2
-    - name: Email
-      pre: heart-handshake
+    - name: 'Email'
+      pre: 'heart-handshake'
       url: 'mailto:contact@swlacy.com?subject=Hello!'
       weight: 3
-    - name: Resume
-      pre: paperclip
-      url: /resume
+    - name: 'Resume'
+      pre: 'paperclip'
+      url: '/resume'
       weight: 4
-    - name: Src
-      pre: code-2
+    - name: 'Src'
+      pre: 'code-2'
       url: 'https://github.com/lacysw/blog'
       weight: 5
   socials:
-    - name: Email
-      pre: mail
+    - name: 'Email'
+      pre: 'mail'
       url: 'mailto:contact@swlacy.com?subject=Hello!'
       weight: 1
-    - name: Twitter
-      pre: twitter
+    - name: 'Twitter'
+      pre: 'twitter'
       url: 'https://twitter.com/actuallysid'
       weight: 2
-    - name: LinkedIn
-      pre: linkedin
+    - name: 'LinkedIn'
+      pre: 'linkedin'
       url: 'https://linkedin.com/in/lacysw'
       weight: 3
-    - name: GitHub
-      pre: github
+    - name: 'GitHub'
+      pre: 'github'
       url: 'https://github.com/lacysw'
       weight: 4
-    - name: Resume
-      pre: paperclip
+    - name: 'Resume'
+      pre: 'paperclip'
       url: '/resume'
       weight: 5
   typed:
-    - name: 'cybersec student.'
-    - name: 'security engineer.'
+    - name: 'DevSecOps engineer.'
+    - name: 'hiker and cyclist.'
     - name: 'homelab hobbyist.'
-    - name: 'programmer/tinkerer.'
-
+    - name: 'security student.'
   indexCards:
-    - name: Posts
-      pre: folder
+    - name: 'Posts'
+      pre: 'folder'
       url: '/resume'
       weight: 1
-    - name: About Me
-      pre: user
+    - name: 'About Me'
+      pre: 'user'
       url: '/about'
       weight: 2
-    - name: Resume
-      pre: paperclip
+    - name: 'Resume'
+      pre: 'paperclip'
       url: '/resume'
       weight: 3
   footerPages:
-    - name: Articles
-      pre: newspaper
-      url: /articles
+    - name: 'Articles'
+      pre: 'newspaper'
+      url: '/articles'
       weight: 1
-    - name: About
-      pre: contact
-      url: /about
+    - name: 'About'
+      pre: 'contact'
+      url: '/about'
       weight: 2
-    - name: Contact
-      pre: heart-handshake
+    - name: 'Contact'
+      pre: 'heart-handshake'
       url: 'mailto:contact@swlacy.com?subject=Hello!'
       weight: 3
-    - name: Resume
-      pre: paperclip
-      url: /resume
+    - name: 'Resume'
+      pre: 'paperclip'
+      url: '/resume'
       weight: 4
-    - name: Source
-      pre: code-2
+    - name: 'Source'
+      pre: 'code-2'
       url: 'https://github.com/lacysw/blog'
       weight: 5
 
