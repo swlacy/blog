@@ -13,6 +13,7 @@ params:
   authorPage: '/about'
   resumeLink: '/resume'
   resumeFile: '/SidLacyResume.pdf'
+  resumeSrc: 'https://www.overleaf.com/read/tvwcbjrwzygs'
   repoLink: 'https://github.com/lacysw/blog'
   logoPath: '/logo.webp'
   showLastBuilt: true
