@@ -10,8 +10,8 @@ lastmod: '2023-04-12'
 
 cover:
     path: '/media/aboutpic.webp'
-    alt: 'A picture of me (2023) 😵‍💫'
-    caption: 'A picture of me (2023) 😵‍💫'
+    alt: 'A picture of me 😵‍💫 (2023)'
+    caption: 'A picture of me 😵‍💫 (2023)'
 
 show:
     meta: true
