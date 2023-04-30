@@ -9,9 +9,9 @@ date: '2021-12-28'
 lastmod: '2023-04-12'
 
 cover:
-    path: ''
-    alt: ''
-    caption: ''
+    path: '/media/aboutpic.webp'
+    alt: 'A picture of me (2023) 😵‍💫'
+    caption: 'A picture of me (2023) 😵‍💫'
 
 show:
     meta: true
