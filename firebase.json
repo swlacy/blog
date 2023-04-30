@@ -4,17 +4,6 @@
 
         "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
 
-        "rewrites": [
-            {
-                "source": "/netdiag",
-                "destination": "/media/netdiag.png"
-            },
-            {
-                "source": "/resume",
-                "destination": "/SidLacyResume.pdf"
-            }
-        ],
-
         "headers": [
             {
                 "source": "**",

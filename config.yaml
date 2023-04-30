@@ -12,6 +12,7 @@ params:
   timezone: 'PST'
   authorPage: '/about'
   resumeLink: '/resume'
+  resumeFile: '/SidLacyResume.pdf'
   repoLink: 'https://github.com/lacysw/blog'
   logoPath: '/logo.webp'
   showLastBuilt: true
