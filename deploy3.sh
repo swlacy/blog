@@ -18,7 +18,7 @@ function hugo_build() {
     # Build site
     HUGO_BUILD_STATUS="$(hugo --minify --gc 2>&1 | sed 's/^/    /g')"
 
-    printf "%s\n\n" "$HUGO_BUILD_FORMATTED"
+    printf "%s\n\n" "$HUGO_BUILD_STATUS"
 }
 
 # Pull latest changes
