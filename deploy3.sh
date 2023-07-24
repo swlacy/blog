@@ -68,7 +68,7 @@ function git_commit() {
     } 2>&1 | sed 's/^/    /g' )"
     GIT_BRANCH_NAME="$(git rev-parse --abbrev-ref HEAD)"
 
-    printf "[!] Committing to branch '%s' on git:%s\n\n%s\n\n" \
+    printf "[!] Committing to Branch '%s' on git:%s\n\n%s\n\n" \
         "$GIT_BRANCH_NAME" "$(basename $(pwd))" "$GIT_COMMIT_STATUS"
 }
 
@@ -116,4 +116,4 @@ cd ../..
 printf "[!] Dummy firebase deploy here\n\n"
 # firebase_deploy
 
-printf "[!] Done\n"
+printf ":)"
