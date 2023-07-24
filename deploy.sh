@@ -136,7 +136,6 @@ git_pull && git_commit "$*" && git_push
 cd ../..
 
 # Deploy site to Firebase
-printf "[!] Dummy firebase deploy here\n\n"
-# firebase_deploy
+firebase_deploy
 
 printf ":)\n"
