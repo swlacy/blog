@@ -23,7 +23,7 @@ function hugo_build() {
 
 # Pull latest changes
 function git_pull() {
-    printf "[!] Pulling Latest Changes\n\n"
+    printf "[!] Pulling Latest Changes on git:%s\n\n" "$(basename $(pwd))"
 
     GIT_PULL_STATUS=$(git pull | sed 's/^/    /g')
 
