@@ -116,4 +116,4 @@ cd ../..
 printf "[!] Dummy firebase deploy here\n\n"
 # firebase_deploy
 
-printf ":)"
+printf ":)\n"
