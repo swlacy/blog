@@ -34,12 +34,13 @@ params:
     informative. Notice something in need of improvement? Please let me know
     [via email](mailto:contact@swlacy.com?subject=Hello!) or
     [git pull request](https://github.com/lacysw/blog).
+  footerTagLine: "Made with ❤️"
 
 menus:
   header:
-    - name: 'Posts'
+    - name: 'Articles'
       pre: 'newspaper'
-      url: '/#recent-posts'
+      url: '/articles'
       weight: 1
     - name: 'About'
       pre: 'contact'
@@ -47,7 +48,7 @@ menus:
       weight: 2
     - name: 'Email'
       pre: 'heart-handshake'
-      url: 'mailto:contact@swlacy.com?subject=Hello!'
+      url: 'mailto:contact@swlacy.com?subject=Hello'
       weight: 3
     - name: 'Resume'
       pre: 'paperclip'
