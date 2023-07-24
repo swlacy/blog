@@ -32,7 +32,7 @@ function git_pull() {
 
 # Commit changes to working tree
 function git_commit() {
-    printf "[!] Committing Changes\n\n"
+    printf "[!] Committing Changes on git:%s\n\n" "basename $(pwd)"
 
     # Check for changes to working tree; if none, return
     if [ ! "$(git status --porcelain)" ]; then
@@ -68,13 +68,13 @@ function git_commit() {
     } 2>&1 | sed 's/^/    /g' )"
     GIT_BRANCH_NAME="$(git rev-parse --abbrev-ref HEAD)"
 
-    printf "[!] Committing to branch '%s'\n\n%s\n\n" \
-        "$GIT_BRANCH_NAME" "$GIT_COMMIT_STATUS"
+    printf "[!] Committing to branch '%s' on git:%s\n\n%s\n\n" \
+        "$GIT_BRANCH_NAME" "basename $(pwd)" "$GIT_COMMIT_STATUS"
 }
 
 # Push changes to remote
 function git_push() {
-    printf "[!] Pushing Changes\n\n"
+    printf "[!] Pushing Changes on git:%s\n\n" "basename $(pwd)"
 
     # Check for changes to working tree; if none, return
     if [ ! "$(git status --porcelain)" ]; then
