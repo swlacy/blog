@@ -24,16 +24,17 @@ params:
   headshot: '/headshot.webp'
   indexBg: '/indexBg.webp'
   indexTitle: "Hey, I'm Sid."
-  indexTypedPrefix: "I'm a "
+  indexTitleIcon: "terminal"
   indexSubTitle: >-
-    This is my personal website, which I use to ~~ramble about security topics~~
-    publish technical stuff related to my cybersecurity learning.
-    Feel free to reach out 👋.
+    This is my personal site. Sometimes, I push a commit where I ~~ramble about
+    infosec stuff~~ discuss topics related to my cybersecurity learning journey.
+    Feel free to reach out 👋
   footnote: >-
     **Hey there!** Thanks for reading my post. I hope it was interesting and
     informative. Notice something in need of improvement? Please let me know
     [via email](mailto:contact@swlacy.com?subject=Hello!) or
     [git pull request](https://github.com/lacysw/blog).
+  indexTypedPrefix: "I'm a "
   footerTagLine: "Made with ❤️"
 
 menus:
@@ -58,6 +59,31 @@ menus:
       pre: 'code-2'
       url: 'https://github.com/lacysw/blog'
       weight: 5
+  index:
+    - name: 'whoami'
+      pre: 'user'
+      url: '/about'
+      weight: 1
+    - name: 'new stuff'
+      pre: 'folder-open'
+      url: '/articles'
+      weight: 2
+    - name: 'post archive'
+      pre: 'archive'
+      url: '/archive'
+      weight: 3
+    - name: 'resume pdf'
+      pre: 'paperclip'
+      url: '/resume'
+      weight: 4
+    - name: 'cv page'
+      pre: 'album'
+      url: '/cv'
+      weight: 5
+    - name: 'source code'
+      pre: 'code-2'
+      url: 'https://github.com/lacysw/blog'
+      weight: 6
   socials:
     - name: 'Email'
       pre: 'mail'
