@@ -43,7 +43,7 @@ fi
 fetch_file "$TAILWIND_PATH/tw_bin" "https://github.com/tailwindlabs/tailwindcss/releases/latest/download/$TAILWIND_BIN_ARCH"
 
 # Fetch latest minified Lucide icon JS
-fetch_file "$JS_PATH/lucide.min.js" "https://unpkg.com/lunr@latest/lunr.min.js"
+fetch_file "$JS_PATH/lucide.min.js" "https://unpkg.com/lucide@latest"
 
 # Fetch Ubuntu font family
 fetch_file "$FONT_PATH/ubuntu.zip" "https://www.fontsquirrel.com/fonts/download/ubuntu"
