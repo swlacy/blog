@@ -101,10 +101,6 @@ menus:
       pre: 'github'
       url: 'https://github.com/lacysw'
       weight: 4
-    - name: 'Resume'
-      pre: 'paperclip'
-      url: '/resume'
-      weight: 5
   typed:
     - name: 'DevSecOps engineer.'
     - name: 'hiker and cyclist.'
