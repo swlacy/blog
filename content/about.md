@@ -39,4 +39,6 @@ Brief details regarding my qualifications can be found on [my resume](/resume). 
 
 Outside of security, I enjoy hiking and cycling around the beautiful Pacific Northwest, which I am grateful to call home. Find me after work reading an article, drinking a cup of coffee, or relaxing in the sun – or maybe all three at once.
 
+![Me on mailbox peak](/media/aboutpic2.webp)
+
 Have a great day 🥂
